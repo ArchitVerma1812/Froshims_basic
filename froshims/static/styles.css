@@ -1,0 +1,136 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.sport-options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Primary Colors */
+:root {
+    --harvard-crimson: #A41034;
+    --harvard-dark-gray: #333333;
+    --harvard-light-gray: #F5F5F5;
+    --white: #FFFFFF;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--harvard-light-gray);
+    color: var(--harvard-dark-gray);
+    line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+    background-color: var(--harvard-crimson);
+    color: var(--white);
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: var(--harvard-dark-gray);
+}
+
+nav a {
+    color: var(--white);
+    padding: 15px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: var(--harvard-crimson);
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+main h2 {
+    color: var(--harvard-crimson);
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: var(--harvard-dark-gray);
+}
+
+form select {
+
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid var(--harvard-dark-gray);
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form button {
+    display: block;
+    margin-top: 15px;
+    background-color: var(--harvard-crimson);
+    color: var(--white);
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: darken(var(--harvard-crimson), 10%);
+}
+
+/* Footer */
+footer {
+    background-color: var(--harvard-dark-gray);
+    color: var(--white);
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
